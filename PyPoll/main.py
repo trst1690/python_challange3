@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import csv
 
-csvpath = "C:/Users/Owner/Desktop/challange 3/python_challange3/PyPoll/Resources/election_data.csv"
+csvpath = "C:/Users/Owner/Desktop/python_challange3/PyPoll/Resources/election_data.csv"
 Poll_data = []
 Total_of_votes = 0
 results = {}
@@ -29,7 +29,7 @@ with open (csvpath,encoding = "utf-8") as csv_file:
 
 
 
-df = pd.read_csv("C:/Users/Owner/Desktop/challange 3/python_challange3/PyPoll/Resources/election_data.csv")
+df = pd.read_csv("C:/Users/Owner/Desktop/python_challange3/PyPoll/Resources/election_data.csv")
 df_Total_votes = len(df["Ballot ID"])
 
 
@@ -53,7 +53,7 @@ for Candidate_name in results:
     print(f"{Candidate_name}    {vote_percentage}%   ({vote_count})  ")
 print(f"Winner: {winner}")
 
-txtpath = "C:/Users/Owner/Desktop/challange 3/python_challange3/PyPoll/analysis/output.txt"
+txtpath = "C:/Users/Owner/Desktop/python_challange3/PyPoll/analysis/output.txt"
 with open (txtpath, "w") as txtfile:
     txtfile.write("Election Results\n")
     txtfile.write("---------------------\n")
